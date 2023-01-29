@@ -15,6 +15,7 @@ const buildHTML = (XHR) => {
 function post (){
   const submit = document.getElementById("submit");
   submit.addEventListener("click", () => {
+    e.preventDefault();
     const form = document.getElementById("form");
     const formData = new FormData(form);
     const XHR = new XMLHttpRequest();
